@@ -31,6 +31,12 @@ public class CubeController : MonoBehaviour {
 
         // Randomize the colors every second
         InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
+
+        // Change the border of one cube to be white to represent the selected or "cursor" cube
+        GameObject cube = cubes[1][2][0];
+        MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
+        Material colorMat = renderer.materials[0];
+        colorMat.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     }
 	
 	// Update is called once per frame
