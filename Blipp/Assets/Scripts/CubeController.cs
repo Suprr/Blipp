@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class CubeController : MonoBehaviour {
 
+    public GameObject cube;
+    public float rotateSpeed;
     public GameObject[] initCubes;
 
     private GameObject[][][] cubes; // 1st dimension - x, 2nd dimension - y, 3rd dimension - z
+    private bool rotating; // True if cube is rotating, false otherwise
+    private float rotateProgress; // Progress in degrees of cube rotation so far
+    private Vector3 rotateDir; // Direction to apply rotation in
 
 	// Use this for initialization
 	void Start () {
@@ -41,7 +46,7 @@ public class CubeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        PerformRotation();
 	}
 
     // Randomize all colors on the cube
@@ -68,5 +73,105 @@ public class CubeController : MonoBehaviour {
                 }
             }
         }
+    }
+
+    // Perform the rotation animation on the cube if it is necessary
+    void PerformRotation()
+    {
+        if (rotating) // Check if the cube is rotating
+        {
+            float newRotate = rotateSpeed * Time.deltaTime; // Generate the necessary rotation to perform
+            rotateProgress += newRotate;
+            if (rotateProgress >= 90f) // If we have rotated past 90 degrees, stop rotating
+            {
+                // Set the rotation back to exactly 90 degrees
+                cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate + 90f - rotateProgress);
+                rotating = false;
+            }
+            else
+            { // Otherwise apply the rotation
+                cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate);
+            }
+        }
+    }
+
+    public void RotateUp()
+    {
+        if (!rotating)
+        {
+            rotating = true;
+            rotateProgress = 0;
+            rotateDir = new Vector3(1, 0, 0);
+        }
+    }
+
+    public void RotateLeft()
+    {
+        if (!rotating)
+        {
+            rotating = true;
+            rotateProgress = 0;
+            rotateDir = new Vector3(0, 1, 0);
+        }
+    }
+
+    public void RotateDown()
+    {
+        if (!rotating)
+        {
+            rotating = true;
+            rotateProgress = 0;
+            rotateDir = new Vector3(-1, 0, 0);
+        }
+    }
+
+    public void RotateRight()
+    {
+        if (!rotating)
+        {
+            rotating = true;
+            rotateProgress = 0;
+            rotateDir = new Vector3(0, -1, 0);
+        }
+    }
+
+    public void CursorUp()
+    {
+        Debug.Log("Cursor Up");
+    }
+
+    public void CursorLeft()
+    {
+        Debug.Log("Cursor Left");
+    }
+
+    public void CursorDown()
+    {
+        Debug.Log("Cursor Down");
+    }
+
+    public void CursorRight()
+    {
+        Debug.Log("Cursor Right");
+    }
+
+    public void ShiftUp()
+    {
+        Debug.Log("Shift Up");
+    }
+
+    public void ShiftLeft()
+    {
+        Debug.Log("Shift Left");
+    }
+
+    public void ShiftDown()
+    {
+        Debug.Log("Shift Down");
+    }
+
+    public void ShiftRight()
+    {
+        Debug.Log("Shift Right");
     }
 }
