@@ -14,6 +14,7 @@ public class CubeController : MonoBehaviour {
     private bool rotating; // True if cube is rotating, false otherwise
     private float rotateProgress; // Progress in degrees of cube rotation so far
     private Vector3 rotateDir; // Direction to apply rotation in
+    private bool undoRotate; // True if undo rotation is needed, also controls if shifting is allowed
 
 	// Use this for initialization
 	void Start () {
@@ -35,6 +36,8 @@ public class CubeController : MonoBehaviour {
             }
             cubes[i] = cubes2D;
         }
+
+        undoRotate = false;
 
         // Randomize the colors every second
         // InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
@@ -105,41 +108,57 @@ public class CubeController : MonoBehaviour {
 
     public void RotateUp()
     {
-        if (!rotating)
+        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
         {
             rotating = true;
             rotateProgress = 0;
             rotateDir = new Vector3(1, 0, 0);
+            undoRotate = true;
         }
     }
 
     public void RotateLeft()
     {
-        if (!rotating)
+        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
         {
             rotating = true;
             rotateProgress = 0;
             rotateDir = new Vector3(0, 1, 0);
+            undoRotate = true;
         }
     }
 
     public void RotateDown()
     {
-        if (!rotating)
+        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
         {
             rotating = true;
             rotateProgress = 0;
             rotateDir = new Vector3(-1, 0, 0);
+            undoRotate = true;
         }
     }
 
     public void RotateRight()
     {
-        if (!rotating)
+        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
         {
             rotating = true;
             rotateProgress = 0;
             rotateDir = new Vector3(0, -1, 0);
+            undoRotate = true;
+        }
+    }
+
+    // Undo a rotation
+    public void UndoRotate()
+    {
+        if (undoRotate) // Only allow a rotation to be undone if a rotation needs to be undone
+        {
+            rotateProgress = 90 - rotateProgress; // Invert the progress and rotation direction
+            rotateDir *= -1;
+            rotating = true; // Allow the cube to start rotating again, although with undoRotate set to false this time
+            undoRotate = false;
         }
     }
 
@@ -190,6 +209,11 @@ public class CubeController : MonoBehaviour {
     // initDirection - initial direction that the changing axis changes by, so either +1 or -1
     void Shift(int x, int y, int z, int constantAxis, int startChangingAxis, int startOtherAxis, int initDirection)
     {
+        if (undoRotate) // If shifting is not allowed, do nothing
+        {
+            return;
+        }
+
         Vector3 start = new Vector3(x, y, z); // Starting vector
         bool done = false; // True when we are done shifting
         int changingAxis = startChangingAxis; // Current changing axis
