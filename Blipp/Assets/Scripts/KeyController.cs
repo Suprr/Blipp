@@ -72,5 +72,82 @@ public class KeyController : MonoBehaviour {
         {
             cubecontroller.ShiftRight();
         }
+
+        Demo();
 	}
+
+    void Demo()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            cubecontroller.cursor[0] = 0;
+            cubecontroller.cursor[1] = 0;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = true;
+            cubecontroller.RenderCursor();
+        } else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            cubecontroller.cursor[0] = 1;
+            cubecontroller.cursor[1] = 0;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = true;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            cubecontroller.cursor[0] = 2;
+            cubecontroller.cursor[1] = 0;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = true;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            cubecontroller.cursor[0] = 0;
+            cubecontroller.cursor[1] = 1;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = true;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            cubecontroller.cursor[0] = 1;
+            cubecontroller.cursor[1] = 1;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = true;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            cubecontroller.cursor[0] = 2;
+            cubecontroller.cursor[1] = 1;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = true;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            cubecontroller.cursor[0] = 0;
+            cubecontroller.cursor[1] = 2;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = false;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            cubecontroller.cursor[0] = 1;
+            cubecontroller.cursor[1] = 2;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = false;
+            cubecontroller.RenderCursor();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            cubecontroller.cursor[0] = 2;
+            cubecontroller.cursor[1] = 2;
+            cubecontroller.cursor[2] = 0;
+            cubecontroller.front = false;
+            cubecontroller.RenderCursor();
+        }
+    }
 }

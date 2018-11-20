@@ -9,8 +9,8 @@ public class CubeController : MonoBehaviour {
     public GameObject[] initCubes;
 
     private GameObject[][][] cubes; // 1st dimension - x, 2nd dimension - y, 3rd dimension - z
-    private int[] cursor; // Current cursor position
-    private bool front; // Current cursor face
+    public int[] cursor; // Current cursor position, TEMPORARILY PUBLIC FOR DEMO
+    public bool front; // Current cursor face, TEMPORARILY PUBLIC FOR DEMO
     private bool rotating; // True if cube is rotating, false otherwise
     private float rotateProgress; // Progress in degrees of cube rotation so far
     private Vector3 rotateDir; // Direction to apply rotation in
@@ -49,16 +49,38 @@ public class CubeController : MonoBehaviour {
         cursor[1] = 2;
         cursor[2] = 0;
         front = false;
-        GameObject cube = cubes[cursor[0]][cursor[1]][cursor[2]];
-        MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
-        Material colorMat = renderer.materials[0];
-        colorMat.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+
+        RenderCursor();
     }
 	
 	// Update is called once per frame
 	void Update () {
         PerformRotation();
 	}
+
+    // Renders the cursor by setting its border to white and all other borders to black
+    public void RenderCursor()
+    {
+        for (int i = 0;i < 3;i++)
+        {
+            for (int j = 0;j < 3;j++)
+            {
+                for (int k = 0;k < 3;k++)
+                {
+                    GameObject cube = cubes[i][j][k];
+                    MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
+                    Material colorMat = renderer.materials[0];
+                    if (i == cursor[0] && j == cursor[1] && k == cursor[2])
+                    {
+                        colorMat.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    } else
+                    {
+                        colorMat.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+                    }
+                }
+            }
+        }
+    }
 
     // Randomize all colors on the cube
     void RandomizeColors()
@@ -97,6 +119,7 @@ public class CubeController : MonoBehaviour {
             {
                 // Set the rotation back to exactly 90 degrees
                 cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate + 90f - rotateProgress);
+                rotateProgress = 90f;
                 rotating = false;
             }
             else
