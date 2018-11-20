@@ -9,6 +9,8 @@ public class CubeController : MonoBehaviour {
     public GameObject[] initCubes;
 
     private GameObject[][][] cubes; // 1st dimension - x, 2nd dimension - y, 3rd dimension - z
+    private int[] cursor; // Current cursor position
+    private bool front; // Current cursor face
     private bool rotating; // True if cube is rotating, false otherwise
     private float rotateProgress; // Progress in degrees of cube rotation so far
     private Vector3 rotateDir; // Direction to apply rotation in
@@ -35,10 +37,16 @@ public class CubeController : MonoBehaviour {
         }
 
         // Randomize the colors every second
-        InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
+        // InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
+        RandomizeColors();
 
         // Change the border of one cube to be white to represent the selected or "cursor" cube
-        GameObject cube = cubes[1][2][0];
+        cursor = new int[3];
+        cursor[0] = 2;
+        cursor[1] = 2;
+        cursor[2] = 0;
+        front = false;
+        GameObject cube = cubes[cursor[0]][cursor[1]][cursor[2]];
         MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
         Material colorMat = renderer.materials[0];
         colorMat.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
@@ -155,23 +163,150 @@ public class CubeController : MonoBehaviour {
         Debug.Log("Cursor Right");
     }
 
+    // Set the color of a cube at the given Vector coordinates
+    void SetColor(Vector3 coords, Color color)
+    {
+        GameObject cube = cubes[(int)Mathf.Round(coords[0])][(int)Mathf.Round(coords[1])][(int)Mathf.Round(coords[2])]; // Get cube at Vector coordinates by rounding
+        MeshRenderer renderer = cube.GetComponent<MeshRenderer>(); // Get mesh renderer to get color material
+        Material colorMat = renderer.materials[1];
+        colorMat.color = color; // Set color
+    }
+
+    // Get the color of a cube at the given Vector coordinates
+    Color GetColor(Vector3 coords)
+    {
+        GameObject cube = cubes[(int) Mathf.Round(coords[0])][(int)Mathf.Round(coords[1])][(int)Mathf.Round(coords[2])]; // Get cube at Vector coordinates by rounding
+        MeshRenderer renderer = cube.GetComponent<MeshRenderer>(); // Get mesh renderer to get color material
+        Material colorMat = renderer.materials[1];
+        return colorMat.color; // Return color
+    }
+
+    // Shift the cubes in a certain direction around the cube
+    // x, y, z - starting coordinates
+    // Note that an axis in this algorithm is 0 - x, 1 - y, 2 - z
+    // constantAxis - axis that is not changed during shifting, so the shift is completely independent of this axis
+    // startChangingAxis - axis that is initially changed (so shifted towards) in the start of the algorithm
+    // startOtherAxis - other axis that is neither always constant nor the starting change axis, so it is temporarily constant
+    // initDirection - initial direction that the changing axis changes by, so either +1 or -1
+    void Shift(int x, int y, int z, int constantAxis, int startChangingAxis, int startOtherAxis, int initDirection)
+    {
+        Vector3 start = new Vector3(x, y, z); // Starting vector
+        bool done = false; // True when we are done shifting
+        int changingAxis = startChangingAxis; // Current changing axis
+        int otherAxis = startOtherAxis; // Current other axis
+        int direction = initDirection; // Current direction
+        Vector3[] shifts = new Vector3[8]; // Array of cubes in this shift
+
+        shifts[0] = start; // Starting cube is in this shift
+        int i = 1; // Start from index 1
+        Vector3 current = start; // Current cube we are shifting from
+        while(!done)
+        {
+            if ((current[changingAxis] == 0 && direction == -1) || (current[changingAxis] == 2 && direction == 1)) // If we cannot continue moving in this direction
+            {
+                int temp = changingAxis; // Switch the changing axis to the other non-constant axis
+                changingAxis = otherAxis;
+                otherAxis = temp;
+                if (current[changingAxis] == 0) // Configure the direction so the new changing axis can continue in that direction
+                {
+                    direction = 1;
+                } else
+                {
+                    direction = -1;
+                }
+            } else
+            { // Otherwise we move in the direction on the changing axis
+                current[changingAxis] += direction;
+                if (start == current) // If we are back at where we started, we are done
+                {
+                    done = true;
+                }
+                else
+                { // Otherwise add the cube to the list of shifts
+                    shifts[i] = current;
+                    i++;
+                }
+            }
+        }
+
+        Color color = GetColor(shifts[7]); // Color of previous cube
+        for (int j = 0;j < 8;j++)
+        {
+            Vector3 cur = shifts[j];
+            Color temp = GetColor(cur); // Get color of current cube
+            SetColor(cur, color); // Set color of current cube to previous cube
+            color = temp; // Overwrite previous color with current color
+        }
+    }
+
     public void ShiftUp()
     {
-        Debug.Log("Shift Up");
+        if (front)
+        {
+            // Constant axis - x
+            // Initial changing axis - y
+            // Move up
+            Shift(cursor[0], cursor[1], cursor[2], 0, 1, 2, 1);
+        } else
+        {
+            // Constant axis - x
+            // Initial changing axis - z
+            // Move up
+            Shift(cursor[0], cursor[1], cursor[2], 0, 2, 1, 1);
+        }
     }
 
     public void ShiftLeft()
     {
-        Debug.Log("Shift Left");
+        if (front)
+        {
+            // Constant axis - y
+            // Initial changing axis - x
+            // Move left
+            Shift(cursor[0], cursor[1], cursor[2], 1, 0, 2, -1);
+        }
+        else
+        {
+            // Constant axis - z
+            // Initial changing axis - x
+            // Move left
+            Shift(cursor[0], cursor[1], cursor[2], 2, 0, 1, -1);
+        }
     }
 
     public void ShiftDown()
     {
-        Debug.Log("Shift Down");
+        if (front)
+        {
+            // Constant axis - x
+            // Initial changing axis - y
+            // Move down
+            Shift(cursor[0], cursor[1], cursor[2], 0, 1, 2, -1);
+        }
+        else
+        {
+            // Constant axis - x
+            // Initial changing axis - y
+            // Move down
+            Shift(cursor[0], cursor[1], cursor[2], 0, 2, 1, -1);
+        }
     }
 
     public void ShiftRight()
     {
-        Debug.Log("Shift Right");
+        if (front)
+        {
+            // Constant axis - y
+            // Initial changing axis - x
+            // Move right
+            Shift(cursor[0], cursor[1], cursor[2], 1, 0, 2, 1);
+        }
+        else
+        {
+            // Constant axis - z
+            // Initial changing axis - x
+            // Move right
+            Shift(cursor[0], cursor[1], cursor[2], 2, 0, 1, 1);
+        }
     }
 }
