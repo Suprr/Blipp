@@ -17,35 +17,39 @@ public class KeyController : MonoBehaviour {
 	void Update () {
         // True if the user is holding down the Shift key
         bool shift = Input.GetKey(KeyCode.LeftShift);
+        // True if the user is holding down the W, A, S, or D keys
+        bool w = Input.GetKey(KeyCode.W);
+        bool a = Input.GetKey(KeyCode.A);
+        bool s = Input.GetKey(KeyCode.S);
+        bool d = Input.GetKey(KeyCode.D);
 
         if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(rotateKey)) // If the user lets go of shift or the held-down direction shift key, undo the rotation
         {
             cubecontroller.UndoRotate();
         }
 
-        if (shift)
-        { // Detect Shift + WASD for rotation
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                cubecontroller.RotateUp();
-                rotateKey = KeyCode.W;
-            }
-            else if (Input.GetKeyDown(KeyCode.A))
-            {
-                cubecontroller.RotateLeft();
-                rotateKey = KeyCode.A;
-            }
-            else if (Input.GetKeyDown(KeyCode.S))
-            {
-                cubecontroller.RotateDown();
-                rotateKey = KeyCode.S;
-            }
-            else if (Input.GetKeyDown(KeyCode.D))
-            {
-                cubecontroller.RotateRight();
-                rotateKey = KeyCode.D;
-            }
-        } // WASD for cursor movement
+        // Detect Shift + WASD for rotation
+        if ((shift && Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.LeftShift) && w))
+        {
+            cubecontroller.RotateUp();
+            rotateKey = KeyCode.W;
+        }
+        else if ((shift && Input.GetKeyDown(KeyCode.A)) || (Input.GetKeyDown(KeyCode.LeftShift) && a))
+        {
+            cubecontroller.RotateLeft();
+            rotateKey = KeyCode.A;
+        }
+        else if ((shift && Input.GetKeyDown(KeyCode.S)) || (Input.GetKeyDown(KeyCode.LeftShift) && s))
+        {
+            cubecontroller.RotateDown();
+            rotateKey = KeyCode.S;
+        }
+        else if ((shift && Input.GetKeyDown(KeyCode.D)) || (Input.GetKeyDown(KeyCode.LeftShift) && d))
+        {
+            cubecontroller.RotateRight();
+            rotateKey = KeyCode.D;
+        }
+        // WASD for cursor movement
         else if (Input.GetKeyDown(KeyCode.W))
         {
             cubecontroller.CursorUp();
@@ -73,9 +77,10 @@ public class KeyController : MonoBehaviour {
             cubecontroller.ShiftRight();
         }
 
-        Demo();
+        // Demo();
 	}
 
+    /*
     void Demo()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -149,5 +154,5 @@ public class KeyController : MonoBehaviour {
             cubecontroller.front = false;
             cubecontroller.RenderCursor();
         }
-    }
+    }*/
 }

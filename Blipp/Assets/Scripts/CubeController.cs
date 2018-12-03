@@ -5,12 +5,13 @@ using UnityEngine;
 public class CubeController : MonoBehaviour {
 
     public GameObject cube;
+    public GameObject cursor;
     public float rotateSpeed;
     public GameObject[] initCubes;
 
     private GameObject[][][] cubes; // 1st dimension - x, 2nd dimension - y, 3rd dimension - z
-    public int[] cursor; // Current cursor position, TEMPORARILY PUBLIC FOR DEMO
-    public bool front; // Current cursor face, TEMPORARILY PUBLIC FOR DEMO
+    private int[] cursorLoc; // Current cursor position, 1st dimension - x, from 0 to 2, 2nd dimension - z or y from 0 to 5
+    private bool cursorFront; // Current cursor face
     private bool rotating; // True if cube is rotating, false otherwise
     private float rotateProgress; // Progress in degrees of cube rotation so far
     private Vector3 rotateDir; // Direction to apply rotation in
@@ -43,14 +44,12 @@ public class CubeController : MonoBehaviour {
         // InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
         RandomizeColors();
 
-        // Change the border of one cube to be white to represent the selected or "cursor" cube
-        cursor = new int[3];
-        cursor[0] = 2;
-        cursor[1] = 2;
-        cursor[2] = 0;
-        front = false;
-
-        RenderCursor();
+        // Set the default position of the cursor to be the center top cube
+        cursorLoc = new int[2];
+        cursorLoc[0] = 1;
+        cursorLoc[1] = 1;
+        cursorFront = false;
+        UpdateCursor(cursorLoc);
     }
 	
 	// Update is called once per frame
@@ -59,6 +58,7 @@ public class CubeController : MonoBehaviour {
 	}
 
     // Renders the cursor by setting its border to white and all other borders to black
+    /*
     public void RenderCursor()
     {
         for (int i = 0;i < 3;i++)
@@ -70,7 +70,7 @@ public class CubeController : MonoBehaviour {
                     GameObject cube = cubes[i][j][k];
                     MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
                     Material colorMat = renderer.materials[0];
-                    if (i == cursor[0] && j == cursor[1] && k == cursor[2])
+                    if (i == cursorLoc[0] && j == cursorLoc[1] && k == cursorLoc[2])
                     {
                         colorMat.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                     } else
@@ -80,7 +80,7 @@ public class CubeController : MonoBehaviour {
                 }
             }
         }
-    }
+    }*/ 
 
     // Randomize all colors on the cube
     void RandomizeColors()
@@ -119,12 +119,14 @@ public class CubeController : MonoBehaviour {
             {
                 // Set the rotation back to exactly 90 degrees
                 cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate + 90f - rotateProgress);
+                cursor.transform.RotateAround(Vector3.zero, rotateDir, newRotate + 90f - rotateProgress);
                 rotateProgress = 90f;
                 rotating = false;
             }
             else
             { // Otherwise apply the rotation
                 cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate);
+                cursor.transform.RotateAround(Vector3.zero, rotateDir, newRotate);
             }
         }
     }
@@ -185,24 +187,89 @@ public class CubeController : MonoBehaviour {
         }
     }
 
+    // Check if the new cursor location is within the cursor bounds
+    bool CheckCursorBounds(int[] newCursorLoc)
+    {
+        if (newCursorLoc[0] > 2 || newCursorLoc[0] < 0) // Ensure it is within the x-bounds
+        {
+            return false;
+        }
+        if (newCursorLoc[1] > 5 || newCursorLoc[1] < 0) // Ensure it is within the yz-bounds
+        {
+            return false;
+        }
+        return !rotating; // Return true if the cube is not rotating
+    }
+
+    // Update the cursor position given a new, valid, cursor location
+    void UpdateCursor(int[] newCursorLoc)
+    {
+        cursorLoc[0] = newCursorLoc[0]; // Update cursor location
+        cursorLoc[1] = newCursorLoc[1];
+        if (cursorLoc[1] > 2) // If we have traveled more than 2 in the yz-bounds, we are on the front face now
+        {
+            if (!cursorFront) // If we are transitioning from the top face to the front face, rotate the cursor
+            {
+                cursor.transform.RotateAround(Vector3.zero, new Vector3(1, 0, 0), 270);
+                cursor.transform.RotateAround(Vector3.zero, new Vector3(0, 0, 1), 90);
+            }
+            cursorFront = true; // Parse the cursor position using the cursor location
+            cursor.transform.position = new Vector3(-2 + cursorLoc[0] * 2, 2 - (cursorLoc[1] - 3) * 2, -3.01f);
+        }
+        else // If we have traveled less than or equal to 2 in the yz-bounds, we are on the front face now
+        {
+            if (cursorFront) // If we are transitioning from the front face to the top face, rotate the cursor
+            {
+                cursor.transform.RotateAround(Vector3.zero, new Vector3(1, 0, 0), -270);
+                cursor.transform.RotateAround(Vector3.zero, new Vector3(0, 1, 0), -90);
+            }
+            cursorFront = false; // Parse the cursor position using the cursor location
+            cursor.transform.position = new Vector3(-2 + cursorLoc[0] * 2, 3.01f, 2 - cursorLoc[1] * 2);
+        }
+    }
+
+    // Move the cursor up
     public void CursorUp()
     {
-        Debug.Log("Cursor Up");
+        int[] newCursorLoc = (int[]) cursorLoc.Clone();
+        newCursorLoc[1]--; // Update new cursor location by moving it up
+        if (CheckCursorBounds(newCursorLoc)) // Make sure the new cursor location is valid
+        {
+            UpdateCursor(newCursorLoc); // Update the cursor location
+        }
     }
 
+    // Move the cursor left
     public void CursorLeft()
     {
-        Debug.Log("Cursor Left");
+        int[] newCursorLoc = (int[])cursorLoc.Clone();
+        newCursorLoc[0]--; // Update new cursor location by moving it left
+        if (CheckCursorBounds(newCursorLoc)) // Make sure the new cursor location is valid
+        {
+            UpdateCursor(newCursorLoc); // Update the cursor location
+        }
     }
 
+    // Move the cursor down
     public void CursorDown()
     {
-        Debug.Log("Cursor Down");
+        int[] newCursorLoc = (int[])cursorLoc.Clone();
+        newCursorLoc[1]++; // Update new cursor location by moving it down
+        if (CheckCursorBounds(newCursorLoc)) // Make sure the new cursor location is valid
+        {
+            UpdateCursor(newCursorLoc); // Update the cursor location
+        }
     }
 
+    // Move the cursor right
     public void CursorRight()
     {
-        Debug.Log("Cursor Right");
+        int[] newCursorLoc = (int[])cursorLoc.Clone();
+        newCursorLoc[0]++; // Update new cursor location by moving it right
+        if (CheckCursorBounds(newCursorLoc)) // Make sure the new cursor location is valid
+        {
+            UpdateCursor(newCursorLoc); // Update the cursor location
+        }
     }
 
     // Set the color of a cube at the given Vector coordinates
@@ -230,11 +297,27 @@ public class CubeController : MonoBehaviour {
     // startChangingAxis - axis that is initially changed (so shifted towards) in the start of the algorithm
     // startOtherAxis - other axis that is neither always constant nor the starting change axis, so it is temporarily constant
     // initDirection - initial direction that the changing axis changes by, so either +1 or -1
-    void Shift(int x, int y, int z, int constantAxis, int startChangingAxis, int startOtherAxis, int initDirection)
+    void Shift(int constantAxis, int startChangingAxis, int startOtherAxis, int initDirection)
     {
         if (undoRotate) // If shifting is not allowed, do nothing
         {
             return;
+        }
+
+        // Obtain the cube that the cursor is on using the cursor location and cursor face
+        int x;
+        int y;
+        int z;
+        if (cursorFront)
+        {
+            x = cursorLoc[0];
+            y = 5 - cursorLoc[1];
+            z = 0;
+        } else
+        {
+            x = cursorLoc[0];
+            y = 2;
+            z = 2 - cursorLoc[1];
         }
 
         Vector3 start = new Vector3(x, y, z); // Starting vector
@@ -288,72 +371,72 @@ public class CubeController : MonoBehaviour {
 
     public void ShiftUp()
     {
-        if (front)
+        if (cursorFront)
         {
             // Constant axis - x
             // Initial changing axis - y
             // Move up
-            Shift(cursor[0], cursor[1], cursor[2], 0, 1, 2, 1);
+            Shift(0, 1, 2, 1);
         } else
         {
             // Constant axis - x
             // Initial changing axis - z
             // Move up
-            Shift(cursor[0], cursor[1], cursor[2], 0, 2, 1, 1);
+            Shift(0, 2, 1, 1);
         }
     }
 
     public void ShiftLeft()
     {
-        if (front)
+        if (cursorFront)
         {
             // Constant axis - y
             // Initial changing axis - x
             // Move left
-            Shift(cursor[0], cursor[1], cursor[2], 1, 0, 2, -1);
+            Shift(1, 0, 2, -1);
         }
         else
         {
             // Constant axis - z
             // Initial changing axis - x
             // Move left
-            Shift(cursor[0], cursor[1], cursor[2], 2, 0, 1, -1);
+            Shift(2, 0, 1, -1);
         }
     }
 
     public void ShiftDown()
     {
-        if (front)
+        if (cursorFront)
         {
             // Constant axis - x
             // Initial changing axis - y
             // Move down
-            Shift(cursor[0], cursor[1], cursor[2], 0, 1, 2, -1);
+            Shift(0, 1, 2, -1);
         }
         else
         {
             // Constant axis - x
             // Initial changing axis - y
             // Move down
-            Shift(cursor[0], cursor[1], cursor[2], 0, 2, 1, -1);
+            Shift(0, 2, 1, -1);
         }
     }
 
     public void ShiftRight()
     {
-        if (front)
+        if (cursorFront)
         {
             // Constant axis - y
             // Initial changing axis - x
             // Move right
-            Shift(cursor[0], cursor[1], cursor[2], 1, 0, 2, 1);
+            Shift(1, 0, 2, 1);
         }
         else
         {
             // Constant axis - z
             // Initial changing axis - x
             // Move right
-            Shift(cursor[0], cursor[1], cursor[2], 2, 0, 1, 1);
+            Shift(2, 0, 1, 1);
         }
     }
 }
