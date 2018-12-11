@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-12-10T23:59:57.273-05:00
+  lastUpdatedAtString: 2018-12-11T02:20:11.123-05:00
   initializedAtString: 2018-12-10T20:43:59.581-05:00
   entries:
+  - path: Blipp\Assembly-CSharp.csproj
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Blipp\Assets\Scenes\Main.unity
     fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Main.unity
     projectPath: Assets\Scenes\Main.unity
@@ -27,11 +33,29 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Blipp\Assets\Scripts\CubeController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\CubeController.cs
+    projectPath: Assets\Scripts\CubeController.cs
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Blipp\Assets\Scripts\GameController.cs
     fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\GameController.cs
     projectPath: Assets\Scripts\GameController.cs
     originalPath: 
     status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\LevelData.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\LevelData.cs
+    projectPath: Assets\Scripts\LevelData.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Scripts\LevelData.cs.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\LevelData.cs.meta
+    projectPath: Assets\Scripts\LevelData.cs.meta
+    originalPath: 
+    status: 1
     staged: 0
   - path: Blipp\Library\assetDatabase3
     fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\assetDatabase3
@@ -81,6 +105,18 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    projectPath: Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6.info
+    projectPath: Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6.info
+    originalPath: 
+    status: 1
+    staged: 0
   - path: Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
     fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
     projectPath: Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
@@ -90,6 +126,12 @@ MonoBehaviour:
   - path: Blipp\Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
     fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
     projectPath: Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
+    projectPath: Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
     originalPath: 
     status: 3
     staged: 0
@@ -108,6 +150,18 @@ MonoBehaviour:
   - path: Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
     originalPath: 
     status: 3
     staged: 0

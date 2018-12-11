@@ -12,9 +12,119 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2018-12-10T23:40:34.381-05:00
+  lastUpdatedAtString: 2018-12-11T02:00:12.092-05:00
   initializedAtString: 2018-12-10T20:44:17.247-05:00
   log:
+  - commitID: d9f70a54c0eb6e39f2223d384d1118a2ad775885
+    mergeA: 
+    mergeB: 
+    authorName: StevenZabolotny
+    authorEmail: stevezabolotny@gmail.com
+    commitEmail: stevezabolotny@gmail.com
+    commitName: StevenZabolotny
+    summary: Added score, combo, and lives text display, bolts now despawn after successful
+      pass
+    description: Added score, combo, and lives text display, bolts now despawn after
+      successful pass
+    timeString: 2018-12-11T00:00:09.000-05:00
+    commitTimeString: 2018-12-11T00:00:09.000-05:00
+    changes:
+    - path: Blipp\Assets\Scenes\Main.unity
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Main.unity
+      projectPath: Assets\Scenes\Main.unity
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Assets\Scripts\BoltController.cs
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\BoltController.cs
+      projectPath: Assets\Scripts\BoltController.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Assets\Scripts\GameController.cs
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\GameController.cs
+      projectPath: Assets\Scripts\GameController.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\InspectorExpandedItems.asset
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\assetDatabase3
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+      projectPath: Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+      projectPath: Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      status: 3
+      staged: 0
   - commitID: 3342096fbe0333685aa6500441c7533b2c57decf
     mergeA: 
     mergeB: 

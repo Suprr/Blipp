@@ -567,6 +567,51 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &284384720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284384722}
+  - component: {fileID: 284384721}
+  m_Layer: 0
+  m_Name: LevelData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284384721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284384720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901c69a79caeefd4197d7c23a4b720e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+--- !u!4 &284384722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284384720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &338555210
 Prefab:
   m_ObjectHideFlags: 0
@@ -1803,18 +1848,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7bc3b63b302918449929e4ddc095926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnHeight: 15
-  fallSpeed: 1.5
   circleSprites:
   - {fileID: 1592500031}
   - {fileID: 844179943}
   - {fileID: 1584968916}
   - {fileID: 1250218362}
-  colors:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 1, b: 0, a: 1}
-  - {r: 0, g: 0, b: 1, a: 1}
-  - {r: 1, g: 1, b: 0, a: 1}
   gamecontroller: {fileID: 1230021478}
 --- !u!136 &998524375
 CapsuleCollider:
@@ -2203,8 +2241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bolt: {fileID: 998524370}
-  nBolts: 10
-  timeBetweenBolts: 6
   scoreText: {fileID: 2020972317}
   livesText: {fileID: 938427751}
   comboText: {fileID: 589170973}

@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public GameObject bolt; // Original bolt game object
-    public int nBolts; // Number of bolts
-    public int timeBetweenBolts; // Time between bolts
+    public GameObject bolt;
     public Text scoreText; // Score Text
     public Text livesText; // Lives Text
     public Text comboText; // Combo Text
     public int scoreValue; // Value that each bolt gives, scorewise
 
+    private int boltCount; // Current bolt we are up to
     private int score; // Current score
     private int combo; // Current combo
     private int lives; // Current lives
@@ -22,23 +21,25 @@ public class GameController : MonoBehaviour {
         score = 0;
         combo = 1;
         lives = 3;
-		for (int i = 0;i < nBolts;i++)
+        boltCount = 0;
+		for (int i = 0;i < LevelData.nBolts;i++)
         {
-            Invoke("SpawnBolt", timeBetweenBolts * i); // Call SpawnBolt nBolts times, with a delay of timeBetweenBolts between each call
+            Invoke("SpawnBolt", LevelData.boltTimes[i]); // Call SpawnBolt nBolts times, using the boltTimes to determine when to invoke it
         }
 	}
 
     // Spawn a new Bolt
     void SpawnBolt()
     {
+        int c = LevelData.bolts[boltCount]; // Get the index of the color of the bolt we are up to
+        int x = LevelData.boltPos[boltCount][0]; // Get the bolt position
+        int y = LevelData.boltPos[boltCount][1];
+        boltCount++; // Increment bolt count
         GameObject newBolt = Instantiate(bolt); // Copy the bolt
         newBolt.transform.SetParent(bolt.transform.parent);
-        int r1 = Random.Range(-1, 2); 
-        int r2 = Random.Range(-1, 2);
-        int r = Random.Range(0, 4); // Choose a new random color
-        newBolt.GetComponent<BoltController>().SetColor(r); // Pass the randomly chosen values to the bolt
-        newBolt.GetComponent<BoltController>().CreateCircleSprite(r1, r2);
-        newBolt.transform.position = new Vector3(newBolt.transform.position.x + r1 * 2, newBolt.transform.position.y, newBolt.transform.position.z + r2 * 2); // Randomize the position
+        newBolt.GetComponent<BoltController>().SetColor(c); // Pass the level-chosen values to the bolt
+        newBolt.GetComponent<BoltController>().CreateCircleSprite(x, y);
+        newBolt.transform.position = new Vector3(newBolt.transform.position.x + x * 2, newBolt.transform.position.y, newBolt.transform.position.z + y * 2); // Randomize the position
         // Color is randomized in BoltController Start()
         newBolt.SetActive(true); // Set the bolt to active
     }

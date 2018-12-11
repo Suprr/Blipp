@@ -36,7 +36,8 @@ public class CubeController : MonoBehaviour {
 
         // Randomize the colors every second
         // InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
-        RandomizeColors();
+        // RandomizeColors();
+        InitializeColors();
 
         // Set the default position of the cursor to be the center top cube
         cursorLoc = new int[2];
@@ -44,6 +45,24 @@ public class CubeController : MonoBehaviour {
         cursorLoc[1] = 1;
         cursorFront = false;
         UpdateCursor(cursorLoc);
+    }
+
+    // Initialize the colors based on LevelData
+    void InitializeColors()
+    {
+        for (int i = 0;i < 3;i++)
+        {
+            for (int j = 0;j < 3;j++)
+            {
+                for (int k = 0;k < 3;k++)
+                {
+                    GameObject cube = cubes[i][j][k];
+                    MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
+                    Material colorMat = renderer.materials[1];
+                    colorMat.color = LevelData.cubeColors[i][j][k]; // Set the color of the cube to the defined color in level data
+                }
+            }
+        }
     }
 
     // Renders the cursor by setting its border to white and all other borders to black

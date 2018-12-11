@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\CubeController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\KeyController.cs" />
+    <Compile Include="Assets\Scripts\LevelData.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/steve/OneDrive/Documents/College/CSE381/blipp/Blipp/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

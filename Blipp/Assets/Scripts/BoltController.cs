@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class BoltController : MonoBehaviour {
 
-    public float spawnHeight; // Spawning height of bolt
-    public float fallSpeed; // Falling speed of bolt
+    private float spawnHeight = LevelData.spawnHeight; // Spawning height of bolt
+    private float fallSpeed = LevelData.fallSpeed; // Falling speed of bolt
     public GameObject[] circleSprites; // Array of Circle Sprite Objects to copy
-    public Color[] colors; // Array of Colors
     public GameController gamecontroller;
 
     private int rand; // Random number chosen for colors
@@ -15,14 +14,15 @@ public class BoltController : MonoBehaviour {
     private GameObject circleSprite; // Random circle sprite chosen for bolt
     private RectTransform rectTransform; // Rect Transform of the Circle Sprite
 	
-    public void SetColor(int r)
+    // Set the Color of the Bolt
+    public void SetColor(int c)
     {
         MeshRenderer renderer = this.gameObject.GetComponent<MeshRenderer>();
         renderer.materials[0].color = new Color(1.0f, 1.0f, 0.0f, 1.0f);
-        renderer.materials[0].color = colors[r]; // Choose a random color and change the color material to it
-        color = colors[r];
+        renderer.materials[0].color = LevelData.colors[c]; // Change the color material to the color given by the level
+        color = LevelData.colors[c];
+        rand = c; // Store the index of the color so we can find the corresponding circleSprite
 
-        rand = r;
         transform.position = new Vector3(transform.position.x, spawnHeight, transform.position.z);
     }
 
