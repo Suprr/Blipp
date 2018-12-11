@@ -12,6 +12,300 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-12-10T20:44:30.994-05:00
+  lastUpdatedAtString: 2018-12-10T23:15:09.794-05:00
   initializedAtString: 2018-12-10T20:43:59.581-05:00
-  entries: []
+  entries:
+  - path: Blipp\Assets\Scenes\Main.unity
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Main.unity
+    projectPath: Assets\Scenes\Main.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\BoltController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\BoltController.cs
+    projectPath: Assets\Scripts\BoltController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\GameController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\GameController.cs
+    projectPath: Assets\Scripts\GameController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Sprites.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites.meta
+    projectPath: Assets\Sprites.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\bluecircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\bluecircle.png
+    projectPath: Assets\Sprites\bluecircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\bluecircle.png.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\bluecircle.png.meta
+    projectPath: Assets\Sprites\bluecircle.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\greencircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\greencircle.png
+    projectPath: Assets\Sprites\greencircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\greencircle.png.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\greencircle.png.meta
+    projectPath: Assets\Sprites\greencircle.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\redcircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\redcircle.png
+    projectPath: Assets\Sprites\redcircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\redcircle.png.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\redcircle.png.meta
+    projectPath: Assets\Sprites\redcircle.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\topview.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\topview.png
+    projectPath: Assets\Sprites\topview.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\topview.png.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\topview.png.meta
+    projectPath: Assets\Sprites\topview.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\yellowcircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\yellowcircle.png
+    projectPath: Assets\Sprites\yellowcircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Sprites\yellowcircle.png.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Sprites\yellowcircle.png.meta
+    projectPath: Assets\Sprites\yellowcircle.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\assetDatabase3
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236
+    projectPath: Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236.info
+    projectPath: Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb
+    projectPath: Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb.info
+    projectPath: Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\83\83263dc850b8f8142974d6da9cf8b558
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\83\83263dc850b8f8142974d6da9cf8b558
+    projectPath: Library\metadata\83\83263dc850b8f8142974d6da9cf8b558
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\83\83263dc850b8f8142974d6da9cf8b558.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\83\83263dc850b8f8142974d6da9cf8b558.info
+    projectPath: Library\metadata\83\83263dc850b8f8142974d6da9cf8b558.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3
+    projectPath: Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3.info
+    projectPath: Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\a5\a56ed03b00711214cbb5e060919a9347
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\a5\a56ed03b00711214cbb5e060919a9347
+    projectPath: Library\metadata\a5\a56ed03b00711214cbb5e060919a9347
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\a5\a56ed03b00711214cbb5e060919a9347.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\a5\a56ed03b00711214cbb5e060919a9347.info
+    projectPath: Library\metadata\a5\a56ed03b00711214cbb5e060919a9347.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+    projectPath: Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+    projectPath: Library\metadata\d7\d7bc3b63b302918449929e4ddc095926
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8
+    projectPath: Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8.info
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8.info
+    projectPath: Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8.info
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ShaderCache\3\35673037ef67160260bc6ec8633ae51a.bin
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ShaderCache\3\35673037ef67160260bc6ec8633ae51a.bin
+    projectPath: Library\ShaderCache\3\35673037ef67160260bc6ec8633ae51a.bin
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\ShaderCache\3\3b97b21cbf0eb0875d269d5a97100d74.bin
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ShaderCache\3\3b97b21cbf0eb0875d269d5a97100d74.bin
+    projectPath: Library\ShaderCache\3\3b97b21cbf0eb0875d269d5a97100d74.bin
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\ShaderCache\8\84b4250e06a707b9acdd6ed7a9344f0d.bin
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ShaderCache\8\84b4250e06a707b9acdd6ed7a9344f0d.bin
+    projectPath: Library\ShaderCache\8\84b4250e06a707b9acdd6ed7a9344f0d.bin
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\ShaderCache\8\8c7e6515d7d44bcbda971cb2c24e7702.bin
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ShaderCache\8\8c7e6515d7d44bcbda971cb2c24e7702.bin
+    projectPath: Library\ShaderCache\8\8c7e6515d7d44bcbda971cb2c24e7702.bin
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: bluecircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\bluecircle.png
+    projectPath: ..\bluecircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: circletemplate.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\circletemplate.png
+    projectPath: ..\circletemplate.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: greencircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\greencircle.png
+    projectPath: ..\greencircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: redcircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\redcircle.png
+    projectPath: ..\redcircle.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: topview.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\topview.png
+    projectPath: ..\topview.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: yellowcircle.png
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\yellowcircle.png
+    projectPath: ..\yellowcircle.png
+    originalPath: 
+    status: 1
+    staged: 0
