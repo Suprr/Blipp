@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyController : MonoBehaviour {
 
     public CubeController cubecontroller;
+    public CameraController cameracontroller;
 
     private KeyCode rotateKey; // Current key indicating direction we are rotating it
 
@@ -25,28 +26,28 @@ public class KeyController : MonoBehaviour {
 
         if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(rotateKey)) // If the user lets go of shift or the held-down direction shift key, undo the rotation
         {
-            cubecontroller.UndoRotate();
+            cameracontroller.UndoRotate();
         }
 
         // Detect Shift + WASD for rotation
         if ((shift && Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.LeftShift) && w))
         {
-            cubecontroller.RotateUp();
+            cameracontroller.RotateUp();
             rotateKey = KeyCode.W;
         }
         else if ((shift && Input.GetKeyDown(KeyCode.A)) || (Input.GetKeyDown(KeyCode.LeftShift) && a))
         {
-            cubecontroller.RotateLeft();
+            cameracontroller.RotateLeft();
             rotateKey = KeyCode.A;
         }
         else if ((shift && Input.GetKeyDown(KeyCode.S)) || (Input.GetKeyDown(KeyCode.LeftShift) && s))
         {
-            cubecontroller.RotateDown();
+            cameracontroller.RotateDown();
             rotateKey = KeyCode.S;
         }
         else if ((shift && Input.GetKeyDown(KeyCode.D)) || (Input.GetKeyDown(KeyCode.LeftShift) && d))
         {
-            cubecontroller.RotateRight();
+            cameracontroller.RotateRight();
             rotateKey = KeyCode.D;
         }
         // WASD for cursor movement

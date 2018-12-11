@@ -6,16 +6,12 @@ public class CubeController : MonoBehaviour {
 
     public GameObject cube;
     public GameObject cursor;
-    public float rotateSpeed;
     public GameObject[] initCubes;
+    public CameraController cameracontroller;
 
     private GameObject[][][] cubes; // 1st dimension - x, 2nd dimension - y, 3rd dimension - z
     private int[] cursorLoc; // Current cursor position, 1st dimension - x, from 0 to 2, 2nd dimension - z or y from 0 to 5
     private bool cursorFront; // Current cursor face
-    private bool rotating; // True if cube is rotating, false otherwise
-    private float rotateProgress; // Progress in degrees of cube rotation so far
-    private Vector3 rotateDir; // Direction to apply rotation in
-    private bool undoRotate; // True if undo rotation is needed, also controls if shifting is allowed
 
 	// Use this for initialization
 	void Start () {
@@ -38,8 +34,6 @@ public class CubeController : MonoBehaviour {
             cubes[i] = cubes2D;
         }
 
-        undoRotate = false;
-
         // Randomize the colors every second
         // InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
         RandomizeColors();
@@ -51,11 +45,6 @@ public class CubeController : MonoBehaviour {
         cursorFront = false;
         UpdateCursor(cursorLoc);
     }
-	
-	// Update is called once per frame
-	void Update () {
-        PerformRotation();
-	}
 
     // Renders the cursor by setting its border to white and all other borders to black
     /*
@@ -108,85 +97,6 @@ public class CubeController : MonoBehaviour {
         }
     }
 
-    // Perform the rotation animation on the cube if it is necessary
-    void PerformRotation()
-    {
-        if (rotating) // Check if the cube is rotating
-        {
-            float newRotate = rotateSpeed * Time.deltaTime; // Generate the necessary rotation to perform
-            rotateProgress += newRotate;
-            if (rotateProgress >= 90f) // If we have rotated past 90 degrees, stop rotating
-            {
-                // Set the rotation back to exactly 90 degrees
-                cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate + 90f - rotateProgress);
-                cursor.transform.RotateAround(Vector3.zero, rotateDir, newRotate + 90f - rotateProgress);
-                rotateProgress = 90f;
-                rotating = false;
-            }
-            else
-            { // Otherwise apply the rotation
-                cube.transform.RotateAround(Vector3.zero, rotateDir, newRotate);
-                cursor.transform.RotateAround(Vector3.zero, rotateDir, newRotate);
-            }
-        }
-    }
-
-    public void RotateUp()
-    {
-        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
-        {
-            rotating = true;
-            rotateProgress = 0;
-            rotateDir = new Vector3(1, 0, 0);
-            undoRotate = true;
-        }
-    }
-
-    public void RotateLeft()
-    {
-        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
-        {
-            rotating = true;
-            rotateProgress = 0;
-            rotateDir = new Vector3(0, 1, 0);
-            undoRotate = true;
-        }
-    }
-
-    public void RotateDown()
-    {
-        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
-        {
-            rotating = true;
-            rotateProgress = 0;
-            rotateDir = new Vector3(-1, 0, 0);
-            undoRotate = true;
-        }
-    }
-
-    public void RotateRight()
-    {
-        if (!rotating && !undoRotate) // Only allow the cube to rotate if it is not already rotating and we do not need to undo a rotation
-        {
-            rotating = true;
-            rotateProgress = 0;
-            rotateDir = new Vector3(0, -1, 0);
-            undoRotate = true;
-        }
-    }
-
-    // Undo a rotation
-    public void UndoRotate()
-    {
-        if (undoRotate) // Only allow a rotation to be undone if a rotation needs to be undone
-        {
-            rotateProgress = 90 - rotateProgress; // Invert the progress and rotation direction
-            rotateDir *= -1;
-            rotating = true; // Allow the cube to start rotating again, although with undoRotate set to false this time
-            undoRotate = false;
-        }
-    }
-
     // Check if the new cursor location is within the cursor bounds
     bool CheckCursorBounds(int[] newCursorLoc)
     {
@@ -198,7 +108,7 @@ public class CubeController : MonoBehaviour {
         {
             return false;
         }
-        return !rotating; // Return true if the cube is not rotating
+        return !cameracontroller.GetUndoRotate(); // Return true if the camera is not rotating
     }
 
     // Update the cursor position given a new, valid, cursor location
@@ -299,7 +209,7 @@ public class CubeController : MonoBehaviour {
     // initDirection - initial direction that the changing axis changes by, so either +1 or -1
     void Shift(int constantAxis, int startChangingAxis, int startOtherAxis, int initDirection)
     {
-        if (undoRotate) // If shifting is not allowed, do nothing
+        if (cameracontroller.GetUndoRotate()) // If shifting is not allowed, do nothing
         {
             return;
         }
