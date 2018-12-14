@@ -58,8 +58,18 @@ public class CubeController : MonoBehaviour {
                 {
                     GameObject cube = cubes[i][j][k];
                     MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
-                    Material colorMat = renderer.materials[1];
+                    MeshRenderer[] childRenderer = cube.GetComponentsInChildren<MeshRenderer>();
+                    Debug.Log(childRenderer.Length);
+
+
+                    Material colorMat = renderer.materials[0];
+                    Material colorMatChild = childRenderer[1].materials[0];
+                    colorMatChild.color = LevelData.cubeColors[i][j][k]; 
                     colorMat.color = LevelData.cubeColors[i][j][k]; // Set the color of the cube to the defined color in level data
+                    // colorMat.color.SetFloat("_Mode", 4f);
+                    // Color32 col = LevelData.cubeColors[i][j][k];
+                    // col.a = 0;
+                    // renderer.material.SetColor("_Color", col);
                 }
             }
         }
@@ -95,10 +105,10 @@ public class CubeController : MonoBehaviour {
     {
         // List of possible colors
         Color[] colors = new Color[4];
-        colors[0] = new Color(1.0f, 0.0f, 0.0f, 1.0f); // Red
-        colors[1] = new Color(0.0f, 1.0f, 0.0f, 1.0f); // Green
-        colors[2] = new Color(0.0f, 0.0f, 1.0f, 1.0f); // Blue
-        colors[3] = new Color(1.0f, 1.0f, 0.0f, 1.0f); // Yellow
+        colors[0] = new Color(1.0f, 0.0f, 0.0f, 0.0f); // Red
+        colors[1] = new Color(0.0f, 1.0f, 0.0f, 0.0f); // Green
+        colors[2] = new Color(0.0f, 0.0f, 1.0f, 0.0f); // Blue
+        colors[3] = new Color(1.0f, 1.0f, 0.0f, 0.0f); // Yellow
 
         for (int i = 0; i < 3; i++)
         {
@@ -206,7 +216,10 @@ public class CubeController : MonoBehaviour {
     {
         GameObject cube = cubes[(int)Mathf.Round(coords[0])][(int)Mathf.Round(coords[1])][(int)Mathf.Round(coords[2])]; // Get cube at Vector coordinates by rounding
         MeshRenderer renderer = cube.GetComponent<MeshRenderer>(); // Get mesh renderer to get color material
-        Material colorMat = renderer.materials[1];
+        MeshRenderer[] childRenderer = cube.GetComponentsInChildren<MeshRenderer>();
+        Material colorMat = renderer.materials[0];
+        Material colorMatChild = childRenderer[1].materials[0];
+        colorMatChild.color = color;
         colorMat.color = color; // Set color
     }
 
@@ -215,7 +228,7 @@ public class CubeController : MonoBehaviour {
     {
         GameObject cube = cubes[(int) Mathf.Round(coords[0])][(int)Mathf.Round(coords[1])][(int)Mathf.Round(coords[2])]; // Get cube at Vector coordinates by rounding
         MeshRenderer renderer = cube.GetComponent<MeshRenderer>(); // Get mesh renderer to get color material
-        Material colorMat = renderer.materials[1];
+        Material colorMat = renderer.materials[0];
         return colorMat.color; // Return color
     }
 

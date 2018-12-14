@@ -13,6 +13,17 @@ public class BoltController : MonoBehaviour {
     private Color color; // Random color chosen for bolt
     private GameObject circleSprite; // Random circle sprite chosen for bolt
     private RectTransform rectTransform; // Rect Transform of the Circle Sprite
+    public static AudioClip pass;
+    public static AudioClip fail;
+    public AudioSource audioPass;
+    public AudioSource audioFail;
+
+    void Start() 
+    {
+        // audio = GetComponents<AudioSource>();
+        // pass = audio[0].clip;
+        // fail = audio[1].clip;
+    }
 	
     // Set the Color of the Bolt
     public void SetColor(int c)
@@ -57,15 +68,31 @@ public class BoltController : MonoBehaviour {
         }
     }
 
+    
+    public bool SameColor(MeshRenderer renderer)
+    {
+        bool isRedGood = (renderer.materials[0].color.r == color.r);
+ 
+        bool isGreenGood = (renderer.materials[0].color.g == color.g);
+        
+        bool isBlueGood = (renderer.materials[0].color.b == color.b);
+        return(isRedGood && isGreenGood && isBlueGood);
+    }
+
     void OnTriggerStay(Collider collision)
     {
         GameObject cube = collision.gameObject;
         MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
-        if (renderer.materials.Length > 1 && renderer.materials[1].color != color) // Get the color of the cube the bolt has collided with
+        
+        // Debug.Log(SameColor(renderer));
+
+        if (renderer.materials.Length > 1 && !SameColor(renderer)) // Get the color of the cube the bolt has collided with
         {
-            gamecontroller.LoseLife(); // Make the player lose a life
+            // AudioSource.PlayOneShot(fail, 0.8f);
             Destroy(circleSprite);
             Destroy(this.gameObject); // If the colors are different, destroy the bolt
+        }else{
+            // AudioSource.PlayOneShot(pass, 0.8f);
         }
     }
 }
