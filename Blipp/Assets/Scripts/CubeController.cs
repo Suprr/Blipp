@@ -59,7 +59,6 @@ public class CubeController : MonoBehaviour {
                     GameObject cube = cubes[i][j][k];
                     MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
                     MeshRenderer[] childRenderer = cube.GetComponentsInChildren<MeshRenderer>();
-                    Debug.Log(childRenderer.Length);
 
 
                     Material colorMat = renderer.materials[0];

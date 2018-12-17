@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2018-12-13T17:50:58.542-05:00
-  initializedAtString: 2018-12-13T17:50:58.542-05:00
+  lastUpdatedAtString: 2018-12-17T06:22:31.411-05:00
+  initializedAtString: 2018-12-17T05:13:29.852-05:00
   currentGitRemote:
     name: origin
-    url: https://MichaelRizzo219@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
+    url: https://StevenZabolotny@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
     login: 
     user: 
     host: 
@@ -29,9 +29,9 @@ MonoBehaviour:
     name: master
     remote:
       name: origin
-      url: https://MichaelRizzo219@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
+      url: https://StevenZabolotny@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
     trackingBranch: master
   currentConfigRemote:
     name: origin
-    url: https://MichaelRizzo219@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
+    url: https://StevenZabolotny@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
   currentHead: 

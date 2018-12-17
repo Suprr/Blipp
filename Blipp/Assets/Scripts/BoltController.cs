@@ -8,21 +8,15 @@ public class BoltController : MonoBehaviour {
     private float fallSpeed = LevelData.fallSpeed; // Falling speed of bolt
     public GameObject[] circleSprites; // Array of Circle Sprite Objects to copy
     public GameController gamecontroller;
+    public AudioClip audioSuccess;
+    public AudioClip audioFail;
 
     private int rand; // Random number chosen for colors
     private Color color; // Random color chosen for bolt
     private GameObject circleSprite; // Random circle sprite chosen for bolt
     private RectTransform rectTransform; // Rect Transform of the Circle Sprite
-    public static AudioClip pass;
-    public static AudioClip fail;
-    public AudioSource audioPass;
-    public AudioSource audioFail;
 
-    void Start() 
-    {
-        // audio = GetComponents<AudioSource>();
-        // pass = audio[0].clip;
-        // fail = audio[1].clip;
+    void Start() {
     }
 	
     // Set the Color of the Bolt
@@ -79,20 +73,28 @@ public class BoltController : MonoBehaviour {
         return(isRedGood && isGreenGood && isBlueGood);
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        GameObject cube = collision.gameObject;
+        MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
+
+        if (renderer.materials.Length > 1 && SameColor(renderer)) // Test if the bolt has entered a cube of the correct color
+        {
+            AudioSource.PlayClipAtPoint(audioSuccess, transform.position); // Play Success audio clip
+        }
+    }
+
     void OnTriggerStay(Collider collision)
     {
         GameObject cube = collision.gameObject;
         MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
-        
-        // Debug.Log(SameColor(renderer));
 
         if (renderer.materials.Length > 1 && !SameColor(renderer)) // Get the color of the cube the bolt has collided with
         {
-            // AudioSource.PlayOneShot(fail, 0.8f);
+            gamecontroller.LoseLife(); // Make the player lose a life
+            AudioSource.PlayClipAtPoint(audioFail, transform.position); // Play Fail audio clip
             Destroy(circleSprite);
             Destroy(this.gameObject); // If the colors are different, destroy the bolt
-        }else{
-            // AudioSource.PlayOneShot(pass, 0.8f);
         }
     }
 }
