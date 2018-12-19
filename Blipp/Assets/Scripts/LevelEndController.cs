@@ -13,9 +13,12 @@ public class LevelEndController : MonoBehaviour {
     public Button playAgain;
     public Button mainMenu;
 
-	// Use this for initialization
-	void Start () {
-		if (ScoreData.win) // Check if we won or lost, set text
+    // Use this for initialization
+    void Start() {
+        if (LevelData.arcade)
+        {
+            winLoseText.text = "";
+        } else if (ScoreData.win) // Check if we won or lost, set text
         {
             winLoseText.text = "You Win!";
             winLoseText.color = new Color(0.0f, 1.0f, 0.0f, 1.0f);
@@ -30,7 +33,14 @@ public class LevelEndController : MonoBehaviour {
         scoreText.color = new Color(1.0f, 1.0f, 0.0f, 1.0f);
         comboText.text = "Best Combo: " + ScoreData.combo;
         comboText.color = new Color(1.0f, 1.0f, 0.0f, 1.0f);
-        livesText.text = "Lives Remaining: " + ScoreData.lives;
+        if (LevelData.arcade)
+        {
+            livesText.text = "";
+        }
+        else
+        {
+            livesText.text = "Lives Remaining: " + ScoreData.lives;
+        }
         if (ScoreData.lives >= 3) // Load lives remaining and color based on number of lives
         {
             livesText.color = new Color(0.0f, 1.0f, 0.0f, 1.0f);

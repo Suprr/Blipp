@@ -12,6 +12,7 @@ public class LevelData : MonoBehaviour {
     public static Color[][][] cubeColors; // Colors of each cube
     public static float fallSpeed; // Fall speed of bolts
     public static float spawnHeight; // Spawn height of bolts
+    public static bool arcade; // True if arcade mode, false otherwise
 
     public static Color[] colors; // List of colors
     public Color[] initColors;
@@ -27,7 +28,16 @@ public class LevelData : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject); // Do not reset this object
 
-        LevelOne(); // Load level 1
+        // LevelOne(); // Load level 1
+        ArcadeMode();
+    }
+
+    void ArcadeMode()
+    {
+        arcade = true;
+
+        fallSpeed = 2.0f;
+        spawnHeight = 20f;
     }
 
     // Load level 1 into static data structures
@@ -35,6 +45,8 @@ public class LevelData : MonoBehaviour {
     // and occasionally deal with bolts on the other side of the cube
     void LevelOne()
     {
+        arcade = false;
+
         fallSpeed = 2.0f;
         spawnHeight = 20f;
 

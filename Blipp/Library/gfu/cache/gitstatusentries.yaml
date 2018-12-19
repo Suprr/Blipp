@@ -12,6 +12,174 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-12-18T22:50:49.665-05:00
-  initializedAtString: 2018-12-18T21:06:06.626-05:00
-  entries: []
+  lastUpdatedAtString: 2018-12-19T02:14:36.840-05:00
+  initializedAtString: 2018-12-19T02:11:12.229-05:00
+  entries:
+  - path: Blipp\Assembly-CSharp.csproj
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scenes\Main.unity
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Main.unity
+    projectPath: Assets\Scenes\Main.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scenes\Start.unity
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Start.unity
+    projectPath: Assets\Scenes\Start.unity
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Scenes\Start.unity.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Start.unity.meta
+    projectPath: Assets\Scenes\Start.unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Scripts\CubeController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\CubeController.cs
+    projectPath: Assets\Scripts\CubeController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\GameController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\GameController.cs
+    projectPath: Assets\Scripts\GameController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\LevelData.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\LevelData.cs
+    projectPath: Assets\Scripts\LevelData.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\LevelEndController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\LevelEndController.cs
+    projectPath: Assets\Scripts\LevelEndController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Assets\Scripts\StartController.cs
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\StartController.cs
+    projectPath: Assets\Scripts\StartController.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Assets\Scripts\StartController.cs.meta
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\StartController.cs.meta
+    projectPath: Assets\Scripts\StartController.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Blipp\Library\assetDatabase3
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\EditorUserBuildSettings.asset
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\EditorUserBuildSettings.asset
+    projectPath: Library\EditorUserBuildSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    projectPath: Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+    projectPath: Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
+    projectPath: Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0

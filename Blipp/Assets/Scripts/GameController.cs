@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 
     public GameObject bolt;
+    public CubeController cubecontroller;
     public Text scoreText; // Score Text
     public Text livesText; // Lives Text
     public Text comboText; // Combo Text
@@ -17,6 +18,9 @@ public class GameController : MonoBehaviour {
     private int score; // Current score
     private int combo; // Current combo
     private int lives; // Current lives
+    private bool shiftUpColors; // True if colors need to be shifted up
+
+    private float arcadeBoltTime;
 
 	// Use this for initialization
 	void Start () {
@@ -26,15 +30,22 @@ public class GameController : MonoBehaviour {
         boltCount = 0;
         boltCompleteCount = 0;
         ScoreData.combo = 0;
-		for (int i = 0;i < LevelData.nBolts;i++)
+        if (LevelData.arcade)
         {
-            Invoke("SpawnBolt", LevelData.boltTimes[i]); // Call SpawnBolt nBolts times, using the boltTimes to determine when to invoke it
+            arcadeBoltTime = 8.4f;
+            Invoke("SpawnArcadeBolt", 4.0f);
+        } else
+        { // Not arcade mode, spawn bolts according to level data
+            for (int i = 0; i < LevelData.nBolts; i++)
+            {
+                Invoke("SpawnBolt", LevelData.boltTimes[i]); // Call SpawnBolt nBolts times, using the boltTimes to determine when to invoke it
+            }
         }
 	}
 
     private void Update()
     {
-        if (lives > 0 && boltCompleteCount >= LevelData.nBolts) // If we have lives and have completed all bolts, we win the game
+        if (!LevelData.arcade && lives > 0 && boltCompleteCount >= LevelData.nBolts) // If we have lives and have completed all bolts, we win the game
         {
             ScoreData.win = true; // Send final data to Score Data
             ScoreData.score = score;
@@ -50,6 +61,43 @@ public class GameController : MonoBehaviour {
         int x = LevelData.boltPos[boltCount][0]; // Get the bolt position
         int y = LevelData.boltPos[boltCount][1];
         boltCount++; // Increment bolt count
+        CreateBolt(c, x, y);
+    }
+
+    // Spawn an Arcade mode Bolt, which is completely random
+    void SpawnArcadeBolt()
+    {
+        int c = Random.Range(0, LevelData.colors.Length);
+        int x = 0;
+        int y = 0;
+        while (x == 0 && y == 0) // Keep randomizing x and y to make sure the bolt doesn't fall on the center cube
+        {
+            x = Random.Range(-1, 2);
+            y = Random.Range(-1, 2);
+        }
+        CreateBolt(c, x, y);
+        if (arcadeBoltTime > 6.0f) // Modify arcadeBoltTime so that the arcade bolts spawn more frequently
+        {
+            arcadeBoltTime -= 0.4f;
+        } else if (arcadeBoltTime > 4.0f)
+        {
+            arcadeBoltTime -= 0.2f;
+        } else
+        {
+            LevelData.fallSpeed += 0.1f; // Increase speed after to prevent bolt flooding
+            LevelData.spawnHeight += 1.0f;
+        }
+        boltCount++;
+        if (boltCount % 5 == 0) // Every 5 bolts, shift down the colors on the cube and randomize the top level again
+        {
+            shiftUpColors = true;
+        }
+        Invoke("SpawnArcadeBolt", arcadeBoltTime); // Spawn another arcade bolt, continue infinitely
+    }
+
+    // Create a new Bolt GameObject and initialize it given a Color value and spawn coordinates
+    void CreateBolt(int c, int x, int y)
+    {
         GameObject newBolt = Instantiate(bolt); // Copy the bolt
         newBolt.transform.SetParent(bolt.transform.parent);
         newBolt.GetComponent<BoltController>().SetColor(c); // Pass the level-chosen values to the bolt
@@ -71,6 +119,12 @@ public class GameController : MonoBehaviour {
         scoreText.text = "Score: " + score.ToString("000000"); // Update Score and Combo Text
         comboText.text = "Combo: " + combo.ToString() + "x";
         boltCompleteCount++;
+
+        if (LevelData.arcade && shiftUpColors)
+        {
+            cubecontroller.ShiftUpColors();
+            shiftUpColors = false;
+        }
     }
 
     // Lose life due to missed bolt
@@ -94,5 +148,11 @@ public class GameController : MonoBehaviour {
             SceneManager.LoadScene("LevelEnd"); // Load LevelEnd screen
         }
         boltCompleteCount++;
+
+        if (LevelData.arcade && shiftUpColors)
+        {
+            cubecontroller.ShiftUpColors();
+            shiftUpColors = false;
+        }
     }
 }

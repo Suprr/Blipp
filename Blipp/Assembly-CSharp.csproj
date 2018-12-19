@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\LevelData.cs" />
     <Compile Include="Assets\Scripts\LevelEndController.cs" />
     <Compile Include="Assets\Scripts\ScoreData.cs" />
+    <Compile Include="Assets\Scripts\StartController.cs" />
     <None Include="Assets\Sounds\leshylabs fail.txt" />
     <None Include="Assets\Sounds\leshylabs success.txt" />
     <Reference Include="UnityEditor.StandardEvents">

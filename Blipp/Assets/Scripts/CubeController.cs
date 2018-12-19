@@ -34,10 +34,13 @@ public class CubeController : MonoBehaviour {
             cubes[i] = cubes2D;
         }
 
-        // Randomize the colors every second
-        // InvokeRepeating("RandomizeColors", 0.0f, 1.0f);
-        // RandomizeColors();
-        InitializeColors();
+        if (LevelData.arcade)
+        {
+            RandomizeColors();
+        } else
+        {
+            InitializeColors();
+        }
 
         // Set the default position of the cursor to be the center top cube
         cursorLoc = new int[2];
@@ -59,7 +62,6 @@ public class CubeController : MonoBehaviour {
                     GameObject cube = cubes[i][j][k];
                     MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
                     MeshRenderer[] childRenderer = cube.GetComponentsInChildren<MeshRenderer>();
-
 
                     Material colorMat = renderer.materials[0];
                     Material colorMatChild = childRenderer[1].materials[0];
@@ -102,13 +104,6 @@ public class CubeController : MonoBehaviour {
     // Randomize all colors on the cube
     void RandomizeColors()
     {
-        // List of possible colors
-        Color[] colors = new Color[4];
-        colors[0] = new Color(1.0f, 0.0f, 0.0f, 0.0f); // Red
-        colors[1] = new Color(0.0f, 1.0f, 0.0f, 0.0f); // Green
-        colors[2] = new Color(0.0f, 0.0f, 1.0f, 0.0f); // Blue
-        colors[3] = new Color(1.0f, 1.0f, 0.0f, 0.0f); // Yellow
-
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -117,10 +112,62 @@ public class CubeController : MonoBehaviour {
                 {
                     GameObject cube = cubes[i][j][k];
                     MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
-                    Material colorMat = renderer.materials[1];
-                    int r = Random.Range(0, 4);
-                    colorMat.color = colors[r]; // Choose a random color and change the color material to it
+                    MeshRenderer[] childRenderer = cube.GetComponentsInChildren<MeshRenderer>();
+
+
+                    Material colorMat = renderer.materials[0];
+                    Material colorMatChild = childRenderer[1].materials[0];
+
+                    int r = Random.Range(0, LevelData.colors.Length);
+                    colorMatChild.color = LevelData.colors[r];
+                    colorMat.color = LevelData.colors[r]; // Choose a random color and change the color material to it
                 }
+            }
+        }
+    }
+
+    // For arcade mode: shift down all cubes, then generate a new random top level of the cube
+    public void ShiftUpColors()
+    {
+        for (int i = 0; i < 2; i++) // Y coordinate
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                for (int k = 0; k < 3; k++)
+                {
+                    GameObject cube1 = cubes[j][i][k]; // Top cube
+                    MeshRenderer renderer1 = cube1.GetComponent<MeshRenderer>();
+                    MeshRenderer[] childRenderer1 = cube1.GetComponentsInChildren<MeshRenderer>();
+                    Material colorMat1 = renderer1.materials[0];
+                    Material colorMatChild1 = childRenderer1[1].materials[0];
+
+                    GameObject cube2 = cubes[j][i + 1][k]; // Bottom cube
+                    MeshRenderer renderer2 = cube2.GetComponent<MeshRenderer>();
+                    MeshRenderer[] childRenderer2 = cube2.GetComponentsInChildren<MeshRenderer>();
+                    Material colorMat2 = renderer2.materials[0];
+                    Material colorMatChild2 = childRenderer2[1].materials[0];
+
+                    colorMat2.color = colorMat1.color; // Set bottom cube to be top cubes color
+                    colorMatChild2.color = colorMatChild1.color;
+                }
+            }
+        }
+
+        // Randomize the top level
+        for (int j = 0; j < 3; j++)
+        {
+            for (int k = 0; k < 3; k++)
+            {
+                GameObject cube = cubes[j][0][k];
+                MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
+                MeshRenderer[] childRenderer = cube.GetComponentsInChildren<MeshRenderer>();
+
+                Material colorMat = renderer.materials[0];
+                Material colorMatChild = childRenderer[1].materials[0];
+
+                int r = Random.Range(0, LevelData.colors.Length);
+                colorMatChild.color = LevelData.colors[r];
+                colorMat.color = LevelData.colors[r]; // Choose a random color and change the color material to it
             }
         }
     }
