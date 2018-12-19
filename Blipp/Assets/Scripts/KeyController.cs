@@ -1,17 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KeyController : MonoBehaviour {
 
     public CubeController cubecontroller;
     public CameraController cameracontroller;
+    public GameObject menu;
+    public Button menuButton;
+    public Button replayButton;
 
     private KeyCode rotateKey; // Current key indicating direction we are rotating it
 
 	// Use this for initialization
 	void Start () {
-		
+        // menuButton.onClick.AddListener();
+        replayButton.onClick.AddListener(Replay);
 	}
 	
 	// Update is called once per frame
@@ -78,8 +84,18 @@ public class KeyController : MonoBehaviour {
             cubecontroller.ShiftRight();
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menu.SetActive(!menu.activeInHierarchy); // Toggle menu visibility when the user presses Escape
+        }
+
         // Demo();
 	}
+
+    void Replay()
+    {
+        SceneManager.LoadScene("Main"); // Reload the main scene with the same level data to play again
+    }
 
     /*
     void Demo()
