@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-12-19T02:11:25.447-05:00
-  initializedAtString: 2018-12-19T02:11:24.998-05:00
+  lastUpdatedAtString: 2018-12-20T05:24:01.536-05:00
+  initializedAtString: 2018-12-20T04:50:10.117-05:00
   localBranches:
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   remotes:
@@ -42,9 +44,15 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - HEAD
       - master
     subKeyValues:
     - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://StevenZabolotny@bitbucket.org/MichaelRizzo219/cse-381-blipp.git
+        trackingBranch: 
       - name: master
         remote:
           name: origin

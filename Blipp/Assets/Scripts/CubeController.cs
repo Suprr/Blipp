@@ -12,6 +12,7 @@ public class CubeController : MonoBehaviour {
     private GameObject[][][] cubes; // 1st dimension - x, 2nd dimension - y, 3rd dimension - z
     private int[] cursorLoc; // Current cursor position, 1st dimension - x, from 0 to 2, 2nd dimension - z or y from 0 to 5
     private bool cursorFront; // Current cursor face
+    private int[] colorCount; // Current color count for each color;
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +49,8 @@ public class CubeController : MonoBehaviour {
         cursorLoc[1] = 1;
         cursorFront = false;
         UpdateCursor(cursorLoc);
+
+        colorCount = new int[LevelData.colors.Length];
     }
 
     // Initialize the colors based on LevelData
@@ -104,6 +107,7 @@ public class CubeController : MonoBehaviour {
     // Randomize all colors on the cube
     void RandomizeColors()
     {
+        colorCount = new int[LevelData.colors.Length];
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -118,9 +122,14 @@ public class CubeController : MonoBehaviour {
                     Material colorMat = renderer.materials[0];
                     Material colorMatChild = childRenderer[1].materials[0];
 
-                    int r = Random.Range(0, LevelData.colors.Length);
+                    int r = -1;
+                    while (r == -1 || colorCount[r] > (int) System.Math.Ceiling(27.0f / LevelData.colors.Length) + 1)
+                    { // Prevent the randomization from generating too much of the same color
+                        r = Random.Range(0, LevelData.colors.Length);
+                    }
                     colorMatChild.color = LevelData.colors[r];
                     colorMat.color = LevelData.colors[r]; // Choose a random color and change the color material to it
+                    colorCount[r]++;
                 }
             }
         }
@@ -129,7 +138,9 @@ public class CubeController : MonoBehaviour {
     // For arcade mode: shift down all cubes, then generate a new random top level of the cube
     public void ShiftUpColors()
     {
-        for (int i = 0; i < 2; i++) // Y coordinate
+        RandomizeColors(); // Randomize the colors
+        // SHIFTING WAS REMOVED: it wasn't really noticeable that the colors was shifting anyway
+        /*for (int i = 0; i < 2; i++) // Y coordinate
         {
             for (int j = 0; j < 3; j++)
             {
@@ -169,7 +180,7 @@ public class CubeController : MonoBehaviour {
                 colorMatChild.color = LevelData.colors[r];
                 colorMat.color = LevelData.colors[r]; // Choose a random color and change the color material to it
             }
-        }
+        }*/
     }
 
     // Check if the new cursor location is within the cursor bounds

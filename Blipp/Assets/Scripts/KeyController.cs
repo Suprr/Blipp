@@ -16,7 +16,7 @@ public class KeyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        // menuButton.onClick.AddListener();
+        menuButton.onClick.AddListener(Menu);
         replayButton.onClick.AddListener(Replay);
 	}
 	
@@ -95,6 +95,11 @@ public class KeyController : MonoBehaviour {
     void Replay()
     {
         SceneManager.LoadScene("Main"); // Reload the main scene with the same level data to play again
+    }
+
+    void Menu()
+    {
+        SceneManager.LoadScene("MainMenu"); // Return to main menu
     }
 
     /*

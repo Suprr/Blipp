@@ -20,7 +20,7 @@ public class LevelEndController : MonoBehaviour {
         int index = Random.Range(0, 5);
         if (LevelData.arcade)
         {
-            if (ScoreData.combo < 6 && ScoreData.score > 900){
+            if (ScoreData.score > 900){
                 winLoseText.text = winText[index];
             }else{
                 winLoseText.text = failText[index];
@@ -60,10 +60,16 @@ public class LevelEndController : MonoBehaviour {
         }
 
         playAgain.onClick.AddListener(PlayAgain); // Add listener to button
+        mainMenu.onClick.AddListener(MainMenu); // Add listener to button
     }
 
     void PlayAgain()
     {
         SceneManager.LoadScene("Main"); // Reload the main scene with the same level data to play again
+    }
+
+    void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu"); // Return to Main Menu
     }
 }
