@@ -28,8 +28,11 @@ public class LevelData : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject); // Do not reset this object
 
-        // LevelOne(); // Load level 1
-        ArcadeMode();
+        if (arcade){
+            ArcadeMode();
+        }else{
+            LevelOne(); // Load level 1
+        }
     }
 
     void ArcadeMode()

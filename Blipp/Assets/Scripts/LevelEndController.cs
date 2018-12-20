@@ -15,9 +15,16 @@ public class LevelEndController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        string[] winText = {"Great job!", "Superb", "BLIPP", "Play again :-)", "Excellent!"};
+        string[] failText = {"BOO", "LOL!", "Seriously...?", ":-(", "Great job...NOT"};
+        int index = Random.Range(0, 5);
         if (LevelData.arcade)
         {
-            winLoseText.text = "";
+            if (ScoreData.combo < 6 && ScoreData.score > 900){
+                winLoseText.text = winText[index];
+            }else{
+                winLoseText.text = failText[index];
+            }
         } else if (ScoreData.win) // Check if we won or lost, set text
         {
             winLoseText.text = "You Win!";

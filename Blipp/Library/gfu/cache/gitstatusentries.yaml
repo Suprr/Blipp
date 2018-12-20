@@ -12,174 +12,1098 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-12-19T02:14:36.840-05:00
-  initializedAtString: 2018-12-19T02:11:12.229-05:00
+  lastUpdatedAtString: 2018-12-20T02:34:58.452-05:00
+  initializedAtString: 2018-12-20T02:28:25.576-05:00
   entries:
   - path: Blipp\Assembly-CSharp.csproj
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assembly-CSharp.csproj
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: Blipp\Assets\Scenes\Main.unity
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Main.unity
-    projectPath: Assets\Scenes\Main.unity
+  - path: Blipp\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: Blipp\Assets\Scenes\Start.unity
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Start.unity
-    projectPath: Assets\Scenes\Start.unity
+  - path: Blipp\Assets\Scenes\MainMenu.unity
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scenes\MainMenu.unity
+    projectPath: Assets\Scenes\MainMenu.unity
     originalPath: 
     status: 1
     staged: 0
-  - path: Blipp\Assets\Scenes\Start.unity.meta
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scenes\Start.unity.meta
-    projectPath: Assets\Scenes\Start.unity.meta
+  - path: Blipp\Assets\Scenes\MainMenu.unity.meta
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scenes\MainMenu.unity.meta
+    projectPath: Assets\Scenes\MainMenu.unity.meta
     originalPath: 
     status: 1
     staged: 0
-  - path: Blipp\Assets\Scripts\CubeController.cs
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\CubeController.cs
-    projectPath: Assets\Scripts\CubeController.cs
+  - path: Blipp\Assets\Scripts\BlippMainMenuController.cs
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scripts\BlippMainMenuController.cs
+    projectPath: Assets\Scripts\BlippMainMenuController.cs
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Blipp\Assets\Scripts\GameController.cs
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\GameController.cs
-    projectPath: Assets\Scripts\GameController.cs
+  - path: Blipp\Assets\Scripts\BlippMainMenuController.cs.meta
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scripts\BlippMainMenuController.cs.meta
+    projectPath: Assets\Scripts\BlippMainMenuController.cs.meta
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
   - path: Blipp\Assets\Scripts\LevelData.cs
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\LevelData.cs
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scripts\LevelData.cs
     projectPath: Assets\Scripts\LevelData.cs
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Assets\Scripts\LevelEndController.cs
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\LevelEndController.cs
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scripts\LevelEndController.cs
     projectPath: Assets\Scripts\LevelEndController.cs
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Assets\Scripts\StartController.cs
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\StartController.cs
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Assets\Scripts\StartController.cs
     projectPath: Assets\Scripts\StartController.cs
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: Blipp\Assets\Scripts\StartController.cs.meta
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Assets\Scripts\StartController.cs.meta
-    projectPath: Assets\Scripts\StartController.cs.meta
+  - path: Blipp\Blipp.sln
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Blipp.sln
+    projectPath: Blipp.sln
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Blipp\Library\assetDatabase3
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\assetDatabase3
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
+  - path: Blipp\Library\CurrentLayout.dwlt
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Blipp\Library\EditorUserBuildSettings.asset
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\EditorUserBuildSettings.asset
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\EditorUserBuildSettings.asset
     projectPath: Library\EditorUserBuildSettings.asset
     originalPath: 
     status: 3
     staged: 0
-  - path: Blipp\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
+  - path: Blipp\Library\expandedItems
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
+  - path: Blipp\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000002000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000002000000000000000
+    projectPath: Library\metadata\00\00000000000000002000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000003000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000003000000000000000
+    projectPath: Library\metadata\00\00000000000000003000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000004000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000004000000000000000
+    projectPath: Library\metadata\00\00000000000000004000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000004100000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000004100000000000000
+    projectPath: Library\metadata\00\00000000000000004100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000005000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000005000000000000000
+    projectPath: Library\metadata\00\00000000000000005000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000005100000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000005100000000000000
+    projectPath: Library\metadata\00\00000000000000005100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000006000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000006000000000000000
+    projectPath: Library\metadata\00\00000000000000006000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000006100000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000006100000000000000
+    projectPath: Library\metadata\00\00000000000000006100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000007000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000007000000000000000
+    projectPath: Library\metadata\00\00000000000000007000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000007100000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000007100000000000000
+    projectPath: Library\metadata\00\00000000000000007100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000008000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000008000000000000000
+    projectPath: Library\metadata\00\00000000000000008000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\00000000000000009000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\00000000000000009000000000000000
+    projectPath: Library\metadata\00\00000000000000009000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\0000000000000000a100000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\0000000000000000a100000000000000
+    projectPath: Library\metadata\00\0000000000000000a100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\0000000000000000b000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\0000000000000000b000000000000000
+    projectPath: Library\metadata\00\0000000000000000b000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\0000000000000000b100000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\0000000000000000b100000000000000
+    projectPath: Library\metadata\00\0000000000000000b100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\00\0000000000000000c000000000000000
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\00\0000000000000000c000000000000000
+    projectPath: Library\metadata\00\0000000000000000c000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+    projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\07\072450ffed31fe545a60f71f33f53916
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\07\072450ffed31fe545a60f71f33f53916
+    projectPath: Library\metadata\07\072450ffed31fe545a60f71f33f53916
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+    projectPath: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236
+    projectPath: Library\metadata\0f\0fea8847fd96e6b4bac6d4465e7fb236
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\12\12b422275e6ae064c8f4bd000fb4f431
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\12\12b422275e6ae064c8f4bd000fb4f431
+    projectPath: Library\metadata\12\12b422275e6ae064c8f4bd000fb4f431
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333
+    projectPath: Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\13\136dc24f151211d438acee17aff4e934
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\13\136dc24f151211d438acee17aff4e934
+    projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\15\151a1d946b98deb4b98445400983ba92
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\15\151a1d946b98deb4b98445400983ba92
+    projectPath: Library\metadata\15\151a1d946b98deb4b98445400983ba92
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
+    projectPath: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
+    projectPath: Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1
+    projectPath: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+    projectPath: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\18\18e096a98c2704c40a818dd1214cd179
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\18\18e096a98c2704c40a818dd1214cd179
+    projectPath: Library\metadata\18\18e096a98c2704c40a818dd1214cd179
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
+    projectPath: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    projectPath: Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77
+    projectPath: Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\20\204a570cd0814334ba2fd79718030cc0
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\20\204a570cd0814334ba2fd79718030cc0
+    projectPath: Library\metadata\20\204a570cd0814334ba2fd79718030cc0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
+    projectPath: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\21\219646ab8af949b47a1757fd7636de65
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\21\219646ab8af949b47a1757fd7636de65
+    projectPath: Library\metadata\21\219646ab8af949b47a1757fd7636de65
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\21\219646ab8af949b47a1757fd7636de65.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\21\219646ab8af949b47a1757fd7636de65.info
+    projectPath: Library\metadata\21\219646ab8af949b47a1757fd7636de65.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1
+    projectPath: Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\23\23c8bee69b591054094d32918f98facd
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\23\23c8bee69b591054094d32918f98facd
+    projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+    projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6
+    projectPath: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
+    projectPath: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
+    projectPath: Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+    projectPath: Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+    projectPath: Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\30\305b6e818055a104982596b94deddcef
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\30\305b6e818055a104982596b94deddcef
+    projectPath: Library\metadata\30\305b6e818055a104982596b94deddcef
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\30\305b6e818055a104982596b94deddcef.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\30\305b6e818055a104982596b94deddcef.info
+    projectPath: Library\metadata\30\305b6e818055a104982596b94deddcef.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\32\32188fd89022c154c81befa2f0e00be0
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\32\32188fd89022c154c81befa2f0e00be0
+    projectPath: Library\metadata\32\32188fd89022c154c81befa2f0e00be0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+    projectPath: Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+    projectPath: Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a
+    projectPath: Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    projectPath: Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    projectPath: Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\40\405b9b51bb344a128608d968297df79c
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\40\405b9b51bb344a128608d968297df79c
+    projectPath: Library\metadata\40\405b9b51bb344a128608d968297df79c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    projectPath: Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    projectPath: Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
+    projectPath: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+    projectPath: Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70
+    projectPath: Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\4a\4a813084baf34314aa7b09881c317646
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\4a\4a813084baf34314aa7b09881c317646
+    projectPath: Library\metadata\4a\4a813084baf34314aa7b09881c317646
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    projectPath: Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    projectPath: Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\4d\4d64205430999a04981dab6f259b6e44
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\4d\4d64205430999a04981dab6f259b6e44
+    projectPath: Library\metadata\4d\4d64205430999a04981dab6f259b6e44
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\4f\4f704ae4b4f98ae41a0bce26658850c1
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\4f\4f704ae4b4f98ae41a0bce26658850c1
+    projectPath: Library\metadata\4f\4f704ae4b4f98ae41a0bce26658850c1
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\51\517af1b5b81b93b43b9745d58f017562
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\51\517af1b5b81b93b43b9745d58f017562
+    projectPath: Library\metadata\51\517af1b5b81b93b43b9745d58f017562
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    projectPath: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info
+    projectPath: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc
+    projectPath: Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb
+    projectPath: Library\metadata\57\57fa79482fab2f24fa6e5ee1d7fae8bb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
+    projectPath: Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+    projectPath: Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\63\636d33ae594884e7d80b569f429d245d
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\63\636d33ae594884e7d80b569f429d245d
+    projectPath: Library\metadata\63\636d33ae594884e7d80b569f429d245d
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
+    projectPath: Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4
+    projectPath: Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb
+    projectPath: Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\69\6981461fe431401459211818212a29cf
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\69\6981461fe431401459211818212a29cf
+    projectPath: Library\metadata\69\6981461fe431401459211818212a29cf
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+    projectPath: Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    projectPath: Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    projectPath: Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\72\720712be6e31c444f88f57bb85bf5fa5
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\72\720712be6e31c444f88f57bb85bf5fa5
+    projectPath: Library\metadata\72\720712be6e31c444f88f57bb85bf5fa5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\73\736b51049953d11469b0b5aa6d155e03
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\73\736b51049953d11469b0b5aa6d155e03
+    projectPath: Library\metadata\73\736b51049953d11469b0b5aa6d155e03
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\74\74101c7619674b24d82777e7458e0977
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\74\74101c7619674b24d82777e7458e0977
+    projectPath: Library\metadata\74\74101c7619674b24d82777e7458e0977
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
+    projectPath: Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+    projectPath: Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
+    projectPath: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\7e\7e9edc5c0a650b94399165badb935cf6
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\7e\7e9edc5c0a650b94399165badb935cf6
+    projectPath: Library\metadata\7e\7e9edc5c0a650b94399165badb935cf6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\7e\7e9edc5c0a650b94399165badb935cf6.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\7e\7e9edc5c0a650b94399165badb935cf6.info
+    projectPath: Library\metadata\7e\7e9edc5c0a650b94399165badb935cf6.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    projectPath: Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\83\83263dc850b8f8142974d6da9cf8b558
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\83\83263dc850b8f8142974d6da9cf8b558
+    projectPath: Library\metadata\83\83263dc850b8f8142974d6da9cf8b558
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+    projectPath: Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+    projectPath: Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
+    projectPath: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+    projectPath: Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\87\877ef3585573ce44eab899298be23158
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\87\877ef3585573ce44eab899298be23158
+    projectPath: Library\metadata\87\877ef3585573ce44eab899298be23158
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\87\877ef3585573ce44eab899298be23158.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\87\877ef3585573ce44eab899298be23158.info
+    projectPath: Library\metadata\87\877ef3585573ce44eab899298be23158.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+    projectPath: Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3
+    projectPath: Library\metadata\8e\8e9cae5d0538bd04890f7c78439090b3
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
     projectPath: Library\metadata\90\901c69a79caeefd4197d7c23a4b720e6
     originalPath: 
     status: 3
     staged: 0
-  - path: Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
-    projectPath: Library\metadata\cb\cb8df06ec3600634c897effcebcafc83
+  - path: Blipp\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
+    projectPath: Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
     originalPath: 
     status: 3
     staged: 0
-  - path: Blipp\Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
-    projectPath: Library\metadata\f7\f74d2c6a6f4cbff40b4c48e0d4acb178
+  - path: Blipp\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
+    projectPath: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\99\99c9720ab356a0642a771bea13969a05
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\99\99c9720ab356a0642a771bea13969a05
+    projectPath: Library\metadata\99\99c9720ab356a0642a771bea13969a05
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
+    projectPath: Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\9b\9ba48163e6bdf3240b281c9ad4debaaa
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\9b\9ba48163e6bdf3240b281c9ad4debaaa
+    projectPath: Library\metadata\9b\9ba48163e6bdf3240b281c9ad4debaaa
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\9b\9bd1c2c358b7de64694a333737bff16a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\9b\9bd1c2c358b7de64694a333737bff16a
+    projectPath: Library\metadata\9b\9bd1c2c358b7de64694a333737bff16a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
+    projectPath: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\a5\a56ed03b00711214cbb5e060919a9347
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\a5\a56ed03b00711214cbb5e060919a9347
+    projectPath: Library\metadata\a5\a56ed03b00711214cbb5e060919a9347
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
+    projectPath: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
+    projectPath: Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\ab\abded77492f7eca4983957abbba2dd5a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\ab\abded77492f7eca4983957abbba2dd5a
+    projectPath: Library\metadata\ab\abded77492f7eca4983957abbba2dd5a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
+    projectPath: Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f
+    projectPath: Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
+    projectPath: Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    projectPath: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70
+    projectPath: Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\b5\b5da970776034f77a070d99423d68791
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\b5\b5da970776034f77a070d99423d68791
+    projectPath: Library\metadata\b5\b5da970776034f77a070d99423d68791
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    projectPath: Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\bf\bf6307933617bbc4f9db1223166cc8cb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\bf\bf6307933617bbc4f9db1223166cc8cb
+    projectPath: Library\metadata\bf\bf6307933617bbc4f9db1223166cc8cb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\bf\bf6307933617bbc4f9db1223166cc8cb.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\bf\bf6307933617bbc4f9db1223166cc8cb.info
+    projectPath: Library\metadata\bf\bf6307933617bbc4f9db1223166cc8cb.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
+    projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+    projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab
+    projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
+    projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\ca\cad92998c5182496e8b989b406d9f156
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\ca\cad92998c5182496e8b989b406d9f156
+    projectPath: Library\metadata\ca\cad92998c5182496e8b989b406d9f156
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d0\d05b96cee66e14240838de167097537a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\d0\d05b96cee66e14240838de167097537a
+    projectPath: Library\metadata\d0\d05b96cee66e14240838de167097537a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d3\d33d54853fd0f48e0ac8a63ea91e6626
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\d3\d33d54853fd0f48e0ac8a63ea91e6626
+    projectPath: Library\metadata\d3\d33d54853fd0f48e0ac8a63ea91e6626
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
+    projectPath: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8
+    projectPath: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
+    projectPath: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+    projectPath: Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    projectPath: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
+    projectPath: Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+    projectPath: Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8
+    projectPath: Library\metadata\dd\ddb292d14d8e7ed46b89b7f9b0d701e8
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
+    projectPath: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\e0\e083c9632cec9324db7f3ecf400923c4
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\e0\e083c9632cec9324db7f3ecf400923c4
+    projectPath: Library\metadata\e0\e083c9632cec9324db7f3ecf400923c4
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+    projectPath: Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
+    projectPath: Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\e3\e3de62aa69c211e4b8c90fc16f6d350e
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\e3\e3de62aa69c211e4b8c90fc16f6d350e
+    projectPath: Library\metadata\e3\e3de62aa69c211e4b8c90fc16f6d350e
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\e3\e3de62aa69c211e4b8c90fc16f6d350e.info
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\e3\e3de62aa69c211e4b8c90fc16f6d350e.info
+    projectPath: Library\metadata\e3\e3de62aa69c211e4b8c90fc16f6d350e.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a
+    projectPath: Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680
+    projectPath: Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea
+    projectPath: Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f4\f4e802f5c23b07f4493524733a8c4199
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\f4\f4e802f5c23b07f4493524733a8c4199
+    projectPath: Library\metadata\f4\f4e802f5c23b07f4493524733a8c4199
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    projectPath: Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    projectPath: Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc
+    projectPath: Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e
+    projectPath: Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
+    projectPath: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
+    projectPath: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     status: 3
     staged: 0
   - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll.mdb
     originalPath: 
     status: 3
     staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll.mdb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll.mdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    projectPath: Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\Library\ScriptMapper
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\ScriptMapper
+    projectPath: Library\ScriptMapper
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
-  - path: Blipp\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Blipp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Blipp\ProjectSettings\EditorBuildSettings.asset
-    fullPath: C:\Users\steve\OneDrive\Documents\College\CSE381\blipp\Blipp\ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\ProjectSettings\EditorBuildSettings.asset
     projectPath: ProjectSettings\EditorBuildSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\ProjectSettings\ProjectVersion.txt
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\ProjectSettings\ProjectVersion.txt
+    projectPath: ProjectSettings\ProjectVersion.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Blipp\ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\Michael Rizzo\Desktop\Fall 2018\381 Game Design\cse-381-blipp\Blipp\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     status: 3
     staged: 0
